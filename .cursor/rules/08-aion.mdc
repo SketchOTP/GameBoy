@@ -1,0 +1,33 @@
+---
+description: Aion MCP workflow for bounded coding goals
+alwaysApply: false
+---
+
+# Aion
+
+Follow `AGENTS.md` §2–§4.
+
+Use Aion when the user says “Use Aion,” “run Aion,” `/aion`, “have Aion handle this,” or asks to plan/build/validate/report a repo task.
+
+Do not use Aion for trivial one-file edits, pure explanations, or when the user says not to use Aion.
+
+## Tools
+
+- `aion_run_goal` — bounded goals (`goal`, `project_root`, optional `mode`)
+- `aion_set_mode` — set project mode
+- `aion_get_mode` — read project mode
+- `aion_get_status` / `aion_get_report` / `aion_list_sessions` — inspect sessions
+
+Do not put `"tool"` inside the MCP argument payload. The tool name is selected by the MCP call; arguments are `goal`, `project_root`, and optional `mode`.
+
+If no mode is specified, omit `mode` and let Aion use saved/default project mode.
+
+Supported modes: `1`–`10`, `fast`, `balanced`, `deep`, `max`, `auto`.
+
+After Aion runs: read status, call `aion_get_report` if needed, summarize session id, status, changed files, validation, and report path. Do not continue implementation unless the user asks.
+
+If Aion reports `partial_fail`, `blocked`, or `failed`, report that honestly.
+
+Aion is workflow orchestration, not approval authority. Architect is not required to invoke Aion or mode get/set.
+
+Details: `.cursor/skills/aion/SKILL.md`, `docs/usage/mcp_cursor.md`

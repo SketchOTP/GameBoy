@@ -1,0 +1,36 @@
+---
+description: Testing, verification harness, anti-stuck and anti-overmocking rules
+globs:
+  - "**/*.{ts,tsx,js,jsx,py,go,rs,cs,java,kt,rb,php}"
+  - "**/package.json"
+  - "**/pyproject.toml"
+  - "**/Cargo.toml"
+  - "**/go.mod"
+  - "**/Makefile"
+alwaysApply: false
+---
+
+# Verification
+
+Run the smallest relevant verification that proves the change. Full harness: `docs/verification-harness.md`.
+
+| Change | Verification |
+|---|---|
+| Logic | Unit test |
+| Flow | Integration test |
+| Typed code | Typecheck |
+| Frontend/package | Build |
+| Schema | Migration validation |
+| CLI/runtime | Smoke run |
+| Bug fix | Reproduce → test → fix → retest |
+| Aion task | Use Aion session status + final report + project tests |
+
+Inspect verifier signals before inventing commands: `package.json`, `pyproject.toml`, `Cargo.toml`, `go.mod`, `Makefile`.
+
+Anti-stuck: do not rerun the same failing command more than 2 times without a new hypothesis. Max 3 fix-and-retest loops, then report `BLOCKED`.
+
+Anti-overmocking: prefer behavior/integration tests. Mock only external boundaries: network, filesystem, clock, paid APIs, hardware, external services.
+
+Debug escalation: after 2 failed fix loops without new evidence, add logging/instrumentation or inspect a different layer. Stop guessing at the same edit site.
+
+Never say tests passed if they were not run.

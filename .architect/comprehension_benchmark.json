@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-06-17T14:09:59.931946+00:00",
+  "source_commit": null,
+  "repo_path": "/home/sketch/Projects/GameBoy",
+  "enforcement_active": false,
+  "advisory_only": true,
+  "strict_mode_available": false,
+  "resync_performed": true,
+  "claims_validated": true,
+  "drift_detected": true,
+  "gate_report_generated": true,
+  "overall_score": 0.89,
+  "health_label": "healthy",
+  "pass_gate": false,
+  "dimensions": {
+    "module_inventory_accuracy": {
+      "dimension": "module_inventory_accuracy",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "0 items",
+      "observed": "0 items (0 matched)",
+      "evidence": [
+        "matched=0"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "test_inventory_accuracy": {
+      "dimension": "test_inventory_accuracy",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "0 items",
+      "observed": "0 items (0 matched)",
+      "evidence": [
+        "matched=0"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "documentation_inventory_accuracy": {
+      "dimension": "documentation_inventory_accuracy",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "24 items",
+      "observed": "24 items (24 matched)",
+      "evidence": [
+        "matched=24"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "import_graph_coverage": {
+      "dimension": "import_graph_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "0 modules with import edges",
+      "observed": "0 modules covered by depends_on edges",
+      "evidence": [
+        "edge_count=0",
+        "node_count=35"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "claim_support_quality": {
+      "dimension": "claim_support_quality",
+      "score": 0.0,
+      "status": "fail",
+      "expected": "supported or weakly supported claims",
+      "observed": "{'supported': 0, 'weak': 0, 'unsupported': 7, 'contradicted': 0}",
+      "evidence": [
+        "total_claims=7",
+        "unsupported=7"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": "Run architect_validate_claims and add evidence for unsupported claims"
+    },
+    "metadata_freshness": {
+      "dimension": "metadata_freshness",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "repository_truth aligned with HEAD and no stale drift",
+      "observed": "generated_at=2026-06-17T14:09:59.646761+00:00",
+      "evidence": [
+        "truth_commit=None",
+        "head_commit=None"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "gate_readiness": {
+      "dimension": "gate_readiness",
+      "score": 0.9,
+      "status": "pass",
+      "expected": "10 gates passing in dry-run",
+      "observed": "9/10 passed; blocking=0",
+      "evidence": [
+        "overall_would_block=False"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "impact_analysis_coverage": {
+      "dimension": "impact_analysis_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "RSAL artifacts required for impact analysis",
+      "observed": "5/5 prerequisites present",
+      "evidence": [
+        "repository_truth",
+        "claim_registry",
+        "drift_findings",
+        "rsal_gate_report",
+        "knowledge_graph"
+      ],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "runtime_evidence_coverage": {
+      "dimension": "runtime_evidence_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "runtime evidence for runtime claims",
+      "observed": "no runtime claim types present",
+      "evidence": [],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "hardware_evidence_coverage": {
+      "dimension": "hardware_evidence_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "hardware evidence when hardware claims exist",
+      "observed": "no hardware claims present",
+      "evidence": [],
+      "missing_items": [],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "stage_model_coverage": {
+      "dimension": "stage_model_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "stage_domain benchmark gates pass",
+      "observed": "no domain benchmark; no domain nodes in graph",
+      "evidence": [],
+      "missing_items": [
+        "No stage_domain nodes in repository_truth.json"
+      ],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "hardware_model_coverage": {
+      "dimension": "hardware_model_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "hardware_domain benchmark gates pass",
+      "observed": "no domain benchmark; no domain nodes in graph",
+      "evidence": [],
+      "missing_items": [
+        "No hardware_domain nodes in repository_truth.json"
+      ],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "service_model_coverage": {
+      "dimension": "service_model_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "service_domain benchmark gates pass",
+      "observed": "no domain benchmark; no domain nodes in graph",
+      "evidence": [],
+      "missing_items": [
+        "No service_domain nodes in repository_truth.json"
+      ],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "runtime_evidence_model_coverage": {
+      "dimension": "runtime_evidence_model_coverage",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "runtime_evidence_domain benchmark gates pass",
+      "observed": "no domain benchmark; no domain nodes in graph",
+      "evidence": [],
+      "missing_items": [
+        "No runtime_evidence_domain nodes in repository_truth.json"
+      ],
+      "stale_items": [],
+      "recommendation": ""
+    },
+    "domain_link_quality": {
+      "dimension": "domain_link_quality",
+      "score": 1.0,
+      "status": "pass",
+      "expected": "Domain nodes linked via validates/evidences/maps_to/documents_stage edges",
+      "observed": "no domain nodes in graph",
+      "evidence": [],
+      "missing_items": [
+        "no domain nodes in knowledge graph"
+      ],
+      "stale_items": [],
+      "recommendation": ""
+    }
+  },
+  "domain_health": {
+    "stage_domain": {
+      "plugin_id": "stage_domain",
+      "status": "fail",
+      "node_recall": null,
+      "edge_recall": null,
+      "node_precision": null,
+      "edge_precision": null,
+      "critical_false_positives": [],
+      "critical_false_negatives": [],
+      "missing_domain_evidence": [
+        "No stage_domain nodes in repository_truth.json"
+      ],
+      "warnings": [],
+      "recommendation": "Domain plugin benchmark healthy — advisory context is calibrated"
+    },
+    "hardware_domain": {
+      "plugin_id": "hardware_domain",
+      "status": "fail",
+      "node_recall": null,
+      "edge_recall": null,
+      "node_precision": null,
+      "edge_precision": null,
+      "critical_false_positives": [],
+      "critical_false_negatives": [],
+      "missing_domain_evidence": [
+        "No hardware_domain nodes in repository_truth.json"
+      ],
+      "warnings": [],
+      "recommendation": "Domain plugin benchmark healthy — advisory context is calibrated"
+    },
+    "service_domain": {
+      "plugin_id": "service_domain",
+      "status": "fail",
+      "node_recall": null,
+      "edge_recall": null,
+      "node_precision": null,
+      "edge_precision": null,
+      "critical_false_positives": [],
+      "critical_false_negatives": [],
+      "missing_domain_evidence": [
+        "No service_domain nodes in repository_truth.json"
+      ],
+      "warnings": [],
+      "recommendation": "Domain plugin benchmark healthy — advisory context is calibrated"
+    },
+    "runtime_evidence_domain": {
+      "plugin_id": "runtime_evidence_domain",
+      "status": "fail",
+      "node_recall": null,
+      "edge_recall": null,
+      "node_precision": null,
+      "edge_precision": null,
+      "critical_false_positives": [],
+      "critical_false_negatives": [],
+      "missing_domain_evidence": [
+        "No runtime_evidence_domain nodes in repository_truth.json"
+      ],
+      "warnings": [],
+      "recommendation": "Domain plugin benchmark healthy — advisory context is calibrated"
+    }
+  },
+  "findings": [],
+  "recommendations": [
+    {
+      "action": "architect_validate_claims",
+      "dimension": "claim_support_quality",
+      "priority": "high",
+      "detail": "Run architect_validate_claims and add evidence for unsupported claims"
+    }
+  ],
+  "summary": {
+    "overall_score": 0.89,
+    "health_label": "healthy",
+    "pass": false,
+    "dimension_count": 15,
+    "failing_dimensions": [
+      "claim_support_quality"
+    ],
+    "warning_dimensions": [],
+    "hard_warning_count": 0,
+    "recommendation_count": 1,
+    "domain_plugin_count": 4,
+    "domain_context_active": true,
+    "enforcement_active": false,
+    "advisory_only": true
+  }
+}

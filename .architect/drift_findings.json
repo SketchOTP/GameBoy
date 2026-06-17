@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-17T14:10:07.235022+00:00",
+  "repo_path": "/home/sketch/Projects/GameBoy",
+  "source_commit": null,
+  "repository_truth_generated_at": "2026-06-17T14:10:05.730002+00:00",
+  "enforcement_active": false,
+  "findings": [
+    {
+      "drift_type": "DOC_COUNT_DRIFT",
+      "severity": "MEDIUM",
+      "observed": "0",
+      "expected": "24",
+      "source_artifact": ".architect/alignment_report.md",
+      "evidence_artifact": ".architect/repository_truth.json",
+      "recommendation": "Run architect_generate_alignment_report to refresh the view"
+    },
+    {
+      "drift_type": "SCRIPT_COUNT_DRIFT",
+      "severity": "MEDIUM",
+      "observed": "0",
+      "expected": "2",
+      "source_artifact": ".architect/alignment_report.md",
+      "evidence_artifact": ".architect/repository_truth.json",
+      "recommendation": "Run architect_generate_alignment_report to refresh the view"
+    },
+    {
+      "drift_type": "ARTIFACT_COUNT_DRIFT",
+      "severity": "MEDIUM",
+      "observed": "0",
+      "expected": "10",
+      "source_artifact": ".architect/alignment_report.md",
+      "evidence_artifact": ".architect/repository_truth.json",
+      "recommendation": "Run architect_generate_alignment_report to refresh the view"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "HIGH": 0,
+    "MEDIUM": 3,
+    "LOW": 0,
+    "DOC_COUNT_DRIFT": 1,
+    "SCRIPT_COUNT_DRIFT": 1,
+    "ARTIFACT_COUNT_DRIFT": 1
+  }
+}

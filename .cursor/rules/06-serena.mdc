@@ -1,0 +1,20 @@
+---
+description: Serena MCP — symbol-aware code navigation and surgical edits
+alwaysApply: false
+---
+
+# Serena MCP
+
+Use Serena for symbol-level code inspection before modifying unfamiliar code.
+
+Use for unfamiliar modules, refactors, tracing call sites, and surgical symbol edits.
+
+Start: `initial_instructions` once per session, then `activate_project` if needed.
+
+Inspect: `get_symbols_overview`, `find_symbol`, `find_declaration`, `find_referencing_symbols`, `find_implementations`.
+
+Edit only when appropriate: `replace_symbol_body`, `rename_symbol`, `insert_before_symbol`, `insert_after_symbol`.
+
+Use cocoindex-code or repo search for broad discovery; use Serena for precise symbol work.
+
+Details: `docs/serena-tools.md`

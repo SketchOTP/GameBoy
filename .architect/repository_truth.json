@@ -1,0 +1,627 @@
+{
+  "schema_version": "1.0",
+  "scanner_version": "0.3.0",
+  "generated_at": "2026-06-17T14:10:05.730002+00:00",
+  "source_commit": null,
+  "repo_path": "/home/sketch/Projects/GameBoy",
+  "file_count": 50,
+  "file_inventory": [
+    ".architect/alignment_report.md",
+    ".architect/architecture_graph.json",
+    ".architect/architecture_state.json",
+    ".architect/claim_registry.json",
+    ".architect/comprehension_benchmark.json",
+    ".architect/cross_repo_pattern_findings.json",
+    ".architect/drift_findings.json",
+    ".architect/ownership_map.json",
+    ".architect/repository_truth.json",
+    ".architect/rsal_gate_report.json",
+    ".cursor/commands/aion.md",
+    ".cursor/rules/00-core-contract.mdc",
+    ".cursor/rules/01-verification.mdc",
+    ".cursor/rules/02-implementation.mdc",
+    ".cursor/rules/03-approval-gates.mdc",
+    ".cursor/rules/04-mimir.mdc",
+    ".cursor/rules/05-architect-mcp.mdc",
+    ".cursor/rules/06-serena.mdc",
+    ".cursor/rules/07-cocoindex-code.mdc",
+    ".cursor/rules/08-aion.mdc",
+    ".cursor/skills/aion/SKILL.md",
+    ".cursor/skills/mimir/SKILL.md",
+    ".cursorrules",
+    ".gitignore",
+    ".serena/.gitignore",
+    ".serena/project.local.yml",
+    ".serena/project.yml",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "COMMANDMENTS_OF_THE_CODE.md",
+    "GEMINI.md",
+    "README.md",
+    "docs/architect-mcp.md",
+    "docs/cocoindex-code.md",
+    "docs/mcp-tool-manifest.json",
+    "docs/mimir-tools.md",
+    "docs/project-continuity.md",
+    "docs/rule-changelog.md",
+    "docs/serena-tools.md",
+    "docs/usage/mcp_cursor.md",
+    "docs/verification-harness.md",
+    "project_goals.md",
+    "project_history.md",
+    "project_knowledge.md",
+    "project_memory/index.json",
+    "project_status.md",
+    "repo_map.md",
+    "scripts/audit-agent-rules.sh",
+    "scripts/sync-agent-rules.sh",
+    "setup_repo.md"
+  ],
+  "module_inventory": [],
+  "test_inventory": [],
+  "test_file_count": 0,
+  "test_case_count": null,
+  "pytest_result_count": null,
+  "doc_inventory": [
+    ".architect/alignment_report.md",
+    ".cursor/commands/aion.md",
+    ".cursor/skills/aion/SKILL.md",
+    ".cursor/skills/mimir/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "COMMANDMENTS_OF_THE_CODE.md",
+    "GEMINI.md",
+    "README.md",
+    "docs/architect-mcp.md",
+    "docs/cocoindex-code.md",
+    "docs/mcp-tool-manifest.json",
+    "docs/mimir-tools.md",
+    "docs/project-continuity.md",
+    "docs/rule-changelog.md",
+    "docs/serena-tools.md",
+    "docs/usage/mcp_cursor.md",
+    "docs/verification-harness.md",
+    "project_goals.md",
+    "project_history.md",
+    "project_knowledge.md",
+    "project_status.md",
+    "repo_map.md",
+    "setup_repo.md"
+  ],
+  "script_inventory": [
+    "scripts/audit-agent-rules.sh",
+    "scripts/sync-agent-rules.sh"
+  ],
+  "service_inventory": [],
+  "architect_artifacts": [
+    ".architect/alignment_report.md",
+    ".architect/architecture_graph.json",
+    ".architect/architecture_state.json",
+    ".architect/claim_registry.json",
+    ".architect/comprehension_benchmark.json",
+    ".architect/cross_repo_pattern_findings.json",
+    ".architect/drift_findings.json",
+    ".architect/ownership_map.json",
+    ".architect/repository_truth.json",
+    ".architect/rsal_gate_report.json"
+  ],
+  "project_goals_exists": true,
+  "knowledge_graph": {
+    "schema_version": "1.0",
+    "generated_at": "2026-06-17T14:10:05.730002+00:00",
+    "source_commit": null,
+    "nodes": [
+      {
+        "id": "artifact:.architect/alignment_report.md",
+        "kind": "artifact",
+        "name": "alignment_report.md",
+        "path": ".architect/alignment_report.md",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/architecture_graph.json",
+        "kind": "artifact",
+        "name": "architecture_graph.json",
+        "path": ".architect/architecture_graph.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/architecture_state.json",
+        "kind": "artifact",
+        "name": "architecture_state.json",
+        "path": ".architect/architecture_state.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/claim_registry.json",
+        "kind": "artifact",
+        "name": "claim_registry.json",
+        "path": ".architect/claim_registry.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/comprehension_benchmark.json",
+        "kind": "artifact",
+        "name": "comprehension_benchmark.json",
+        "path": ".architect/comprehension_benchmark.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/cross_repo_pattern_findings.json",
+        "kind": "artifact",
+        "name": "cross_repo_pattern_findings.json",
+        "path": ".architect/cross_repo_pattern_findings.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/drift_findings.json",
+        "kind": "artifact",
+        "name": "drift_findings.json",
+        "path": ".architect/drift_findings.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/ownership_map.json",
+        "kind": "artifact",
+        "name": "ownership_map.json",
+        "path": ".architect/ownership_map.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/repository_truth.json",
+        "kind": "artifact",
+        "name": "repository_truth.json",
+        "path": ".architect/repository_truth.json",
+        "metadata": {}
+      },
+      {
+        "id": "artifact:.architect/rsal_gate_report.json",
+        "kind": "artifact",
+        "name": "rsal_gate_report.json",
+        "path": ".architect/rsal_gate_report.json",
+        "metadata": {}
+      },
+      {
+        "id": "doc:.architect/alignment_report.md",
+        "kind": "doc",
+        "name": "alignment_report.md",
+        "path": ".architect/alignment_report.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:.cursor/commands/aion.md",
+        "kind": "doc",
+        "name": "aion.md",
+        "path": ".cursor/commands/aion.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:.cursor/skills/aion/SKILL.md",
+        "kind": "doc",
+        "name": "SKILL.md",
+        "path": ".cursor/skills/aion/SKILL.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:.cursor/skills/mimir/SKILL.md",
+        "kind": "doc",
+        "name": "SKILL.md",
+        "path": ".cursor/skills/mimir/SKILL.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:AGENTS.md",
+        "kind": "doc",
+        "name": "AGENTS.md",
+        "path": "AGENTS.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:CLAUDE.md",
+        "kind": "doc",
+        "name": "CLAUDE.md",
+        "path": "CLAUDE.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:COMMANDMENTS_OF_THE_CODE.md",
+        "kind": "doc",
+        "name": "COMMANDMENTS_OF_THE_CODE.md",
+        "path": "COMMANDMENTS_OF_THE_CODE.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:GEMINI.md",
+        "kind": "doc",
+        "name": "GEMINI.md",
+        "path": "GEMINI.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:README.md",
+        "kind": "doc",
+        "name": "README.md",
+        "path": "README.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/architect-mcp.md",
+        "kind": "doc",
+        "name": "architect-mcp.md",
+        "path": "docs/architect-mcp.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/cocoindex-code.md",
+        "kind": "doc",
+        "name": "cocoindex-code.md",
+        "path": "docs/cocoindex-code.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/mcp-tool-manifest.json",
+        "kind": "doc",
+        "name": "mcp-tool-manifest.json",
+        "path": "docs/mcp-tool-manifest.json",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/mimir-tools.md",
+        "kind": "doc",
+        "name": "mimir-tools.md",
+        "path": "docs/mimir-tools.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/project-continuity.md",
+        "kind": "doc",
+        "name": "project-continuity.md",
+        "path": "docs/project-continuity.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/rule-changelog.md",
+        "kind": "doc",
+        "name": "rule-changelog.md",
+        "path": "docs/rule-changelog.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/serena-tools.md",
+        "kind": "doc",
+        "name": "serena-tools.md",
+        "path": "docs/serena-tools.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/usage/mcp_cursor.md",
+        "kind": "doc",
+        "name": "mcp_cursor.md",
+        "path": "docs/usage/mcp_cursor.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:docs/verification-harness.md",
+        "kind": "doc",
+        "name": "verification-harness.md",
+        "path": "docs/verification-harness.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:project_goals.md",
+        "kind": "doc",
+        "name": "project_goals.md",
+        "path": "project_goals.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:project_history.md",
+        "kind": "doc",
+        "name": "project_history.md",
+        "path": "project_history.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:project_knowledge.md",
+        "kind": "doc",
+        "name": "project_knowledge.md",
+        "path": "project_knowledge.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:project_status.md",
+        "kind": "doc",
+        "name": "project_status.md",
+        "path": "project_status.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:repo_map.md",
+        "kind": "doc",
+        "name": "repo_map.md",
+        "path": "repo_map.md",
+        "metadata": {}
+      },
+      {
+        "id": "doc:setup_repo.md",
+        "kind": "doc",
+        "name": "setup_repo.md",
+        "path": "setup_repo.md",
+        "metadata": {}
+      },
+      {
+        "id": "script:scripts/audit-agent-rules.sh",
+        "kind": "script",
+        "name": "audit-agent-rules.sh",
+        "path": "scripts/audit-agent-rules.sh",
+        "metadata": {}
+      },
+      {
+        "id": "script:scripts/sync-agent-rules.sh",
+        "kind": "script",
+        "name": "sync-agent-rules.sh",
+        "path": "scripts/sync-agent-rules.sh",
+        "metadata": {}
+      }
+    ],
+    "edges": []
+  },
+  "claims": [
+    {
+      "id": "9aa72f41e855b77f",
+      "text": "| 1 | `architect_init_project` | **Required** if `project_goals.md` or `.architect/` missing | Create starter state |",
+      "source_file": "docs/architect-mcp.md",
+      "source_line": 96,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "documentation example line; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "6bc2075fe6e3e657",
+      "text": "| `architect_init_project` | `project_goals.md` or `.architect/` missing | **Required** (onboarding) |",
+      "source_file": "docs/architect-mcp.md",
+      "source_line": 124,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "documentation example line; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "159d02188ea42f88",
+      "text": "| Automatic Mimir recall | **Not implemented** |",
+      "source_file": "docs/architect-mcp.md",
+      "source_line": 194,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "documentation example line; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "f3f6ff814ed0ec6c",
+      "text": "| `project_knowledge.md` | Durable lessons for future agents |",
+      "source_file": "docs/project-continuity.md",
+      "source_line": 27,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "documentation example line; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "145320c3520fe09d",
+      "text": "**RSAL (advisory, not blocking):** Run cold-start per `docs/architect-mcp.md` when artifacts are missing or stale.",
+      "source_file": "docs/project-continuity.md",
+      "source_line": 46,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "design or implementation documentation; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "77ec6da83750fcd3",
+      "text": "If required files are missing: stop, create using `setup_repo.md` templates, log in `project_history.md`, then continue.",
+      "source_file": "docs/project-continuity.md",
+      "source_line": 64,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "design or implementation documentation; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    },
+    {
+      "id": "4b2028371a185e9f",
+      "text": "**Why:** Prior template mixed v3 universal Architect blockers with partial v5 Aion content; corrupted adapter files and missing Aion skill/command docs blocked consistent agent behavior.",
+      "source_file": "docs/rule-changelog.md",
+      "source_line": 32,
+      "claim_type": "KNOWN_GAP",
+      "subject": "",
+      "asserted_state": "gap",
+      "observed_at": null,
+      "extracted_at": "2026-06-17T14:10:05.764350+00:00",
+      "source_class": "design_source",
+      "enforceable_candidate": false,
+      "advisory_only_reason": "design or implementation documentation; not operational status",
+      "enforcement_disposition": "never_enforce",
+      "static_evidence": [],
+      "dynamic_evidence_ids": [],
+      "confidence": {
+        "overall": 0.35,
+        "base_score": 0.15,
+        "static_contribution": 0.0,
+        "dynamic_contribution": 0.0,
+        "penalties": 0.0,
+        "ceiling": 0.75,
+        "factors": {
+          "base_score": 0.15,
+          "documented_status_bonus": 0.2
+        },
+        "caps_applied": [
+          "documented_status"
+        ],
+        "missing_evidence": [],
+        "notes": "KNOWN_GAP — confidence 0.35: support: unsupported — no linked evidence; no linked evidence; caps: documented_status"
+      },
+      "support_status": "unsupported",
+      "supported": null
+    }
+  ],
+  "runtime_evidence_count": 0,
+  "scan_warnings": [],
+  "external_import_modules": [],
+  "notes": "Derived by RSAL Phase 1 resync with Phase 5A domain plugins; not enforcement active."
+}

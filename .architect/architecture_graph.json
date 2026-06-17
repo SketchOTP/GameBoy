@@ -1,0 +1,28 @@
+{
+  "modules": [],
+  "dependencies": {},
+  "state_ownership": {},
+  "boundaries": [],
+  "risk_zones": [],
+  "coupling_relationships": [],
+  "godot_project_detected": false,
+  "gdscript_module_count": 0,
+  "scene_count": 0,
+  "gdscript_symbols": {},
+  "scene_dependencies": {},
+  "unsupported_files": [
+    ".cursor/rules/00-core-contract.mdc",
+    ".cursor/rules/01-verification.mdc",
+    ".cursor/rules/02-implementation.mdc",
+    ".cursor/rules/03-approval-gates.mdc",
+    ".cursor/rules/04-mimir.mdc",
+    ".cursor/rules/05-architect-mcp.mdc",
+    ".cursor/rules/06-serena.mdc",
+    ".cursor/rules/07-cocoindex-code.mdc",
+    ".cursor/rules/08-aion.mdc",
+    ".cursorrules",
+    ".gitignore",
+    ".serena/.gitignore"
+  ],
+  "generated_at": "2026-06-17T14:09:27.656844+00:00"
+}

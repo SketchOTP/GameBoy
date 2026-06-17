@@ -1,0 +1,51 @@
+---
+description: Surgical implementation, lazy senior developer rules, architecture, and backward compatibility
+alwaysApply: false
+---
+
+# Implementation
+
+## Lazy Senior Developer
+
+Lazy means efficient, not careless. Before writing code, stop at the first rung that works:
+
+1. Does this need to be built at all?
+2. Does the standard library already do this?
+3. Does a native platform feature cover it?
+4. Does an already-installed dependency solve it?
+5. Can this be one line?
+6. Only then write the minimum code that works.
+
+No abstractions unless requested or clearly necessary. No new dependency if avoidable. No boilerplate nobody asked for. Deletion over addition. Boring over clever. Fewest files possible.
+
+Never be lazy about trust-boundary validation, data-loss prevention, security, accessibility, real hardware calibration, explicit user requirements, or verification.
+
+Use `ponytail:` comments only for intentional simplifications:
+
+```python
+# ponytail: simple O(n) scan is enough for current config size; upgrade to indexed lookup if this exceeds ~1k entries.
+```
+
+A `ponytail:` comment must name simplification, ceiling, and upgrade path.
+
+## Surgical Changes
+
+Touch only what the task requires. Every changed line must trace to the task.
+
+Do not refactor unrelated code, reformat unrelated files, rename unnecessarily, add unapproved dependencies, clean up dead code unless asked, change public APIs unless required, or create one-off frameworks/helpers.
+
+Report unrelated issues separately under `Unrelated findings:`.
+
+## Simplicity
+
+Prefer small functions, explicit interfaces, typed structures, existing patterns, standard library, direct control flow, and clear failure modes.
+
+Avoid clever abstractions, speculative extensibility, global mutable state, circular imports, hidden side effects, giant utility files, and fragile initialization order.
+
+Validate at system boundaries: user input, network, files, DB, external APIs, MCP/tools.
+
+## Backward Compatibility
+
+Do not break existing APIs, CLIs, DB contracts, runtime flows, config defaults, disabled behavior, or external integrations without explicit approval.
+
+When adding features, preserve old behavior when disabled, isolate behind a clear boundary, and test old and new paths.

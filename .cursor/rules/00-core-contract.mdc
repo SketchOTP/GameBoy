@@ -1,0 +1,21 @@
+---
+description: Universal core contract pointer
+alwaysApply: true
+---
+
+Canonical project rules are in `AGENTS.md`.
+
+Do not duplicate the full rule contract here.
+
+Load deeper guidance only when relevant:
+
+- Aion workflow → `.cursor/rules/08-aion.mdc`, `docs/usage/mcp_cursor.md`
+- Verification → `.cursor/rules/01-verification.mdc`, `docs/verification-harness.md`
+- Implementation/lazy coder/ponytail → `.cursor/rules/02-implementation.mdc`
+- Approval/security → `.cursor/rules/03-approval-gates.mdc`
+- Mimir → `.cursor/rules/04-mimir.mdc`, `docs/mimir-tools.md`
+- Architect MCP → `.cursor/rules/05-architect-mcp.mdc`, `docs/architect-mcp.md`
+- Serena → `.cursor/rules/06-serena.mdc`, `docs/serena-tools.md`
+- cocoindex-code → `.cursor/rules/07-cocoindex-code.mdc`, `docs/cocoindex-code.md`
+- Project continuity → `docs/project-continuity.md`
+- Values layer → `COMMANDMENTS_OF_THE_CODE.md`

@@ -1,0 +1,5 @@
+# Local/runtime metadata (not agent-facing)
+.project_intel/
+
+# Stale append-lock files
+*.flock
