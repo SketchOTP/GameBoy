@@ -6,7 +6,7 @@ Talk to a language model through a nostalgic handheld UI: type or speak a prompt
 
 Everything runs on your machine. No cloud account required for the UI; point it at LM Studio, Ollama, or any OpenAI-compatible chat API you already run locally.
 
-> **Roadmap:** This repository will eventually include a DMG Game Boy emulator. The shipped application today is the **companion** under `companion/`.
+**GameBoy is the finished project** — a self-hosted AI companion in a Game Boy–style shell. It is not a ROM emulator and does not run classic Game Boy games.
 
 ## Screenshots
 
@@ -117,6 +117,8 @@ Load a chat model in your server, then check the shell’s **battery LED**—it 
 ---
 
 ## Project structure
+
+Application code lives in `companion/`:
 
 ```
 GameBoy/
