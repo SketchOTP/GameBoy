@@ -1,0 +1,24 @@
+{
+  "source": "retroboy-shell.png — coords verified by drawing on shell pixels",
+  "image": "retroboy-shell.png",
+  "width": 864,
+  "height": 1080,
+  "lcd": { "x": 298, "y": 226, "w": 269, "h": 247 },
+  "battery_led": { "x": 242, "y": 305, "w": 12, "h": 12 },
+  "buttons": {
+    "power_off": { "x": 175, "y": 106, "w": 48, "h": 28 },
+    "power_on": { "x": 228, "y": 106, "w": 56, "h": 28 },
+    "dpad": {
+      "up": { "x": 222, "y": 512, "w": 72, "h": 58 },
+      "down": { "x": 222, "y": 670, "w": 72, "h": 58 },
+      "left": { "x": 163, "y": 602, "w": 58, "h": 62 },
+      "right": { "x": 285, "y": 618, "w": 58, "h": 62 }
+    },
+    "select": { "x": 320, "y": 796, "w": 76, "h": 44 },
+    "start": { "x": 412, "y": 796, "w": 76, "h": 44 },
+    "b": { "x": 515, "y": 679, "w": 43, "h": 42 },
+    "a": { "x": 600, "y": 638, "w": 43, "h": 43 },
+    "phones": { "x": 295, "y": 928, "w": 270, "h": 48 },
+    "speaker": { "x": 513, "y": 813, "w": 190, "h": 168 }
+  }
+}

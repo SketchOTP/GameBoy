@@ -1,0 +1,4 @@
+Shell art: retroboy-shell.png (@edbooth_art)
+Face sprites: face-sprites.png (4×8 expression sheet)
+
+Nintendo Game Boy is a trademark of Nintendo Co., Ltd.

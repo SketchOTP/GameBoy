@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Companion face labeling</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1rem; background: #1a1a1a; color: #eee; }
+    h1 { font-size: 1.25rem; }
+    p { max-width: 52rem; line-height: 1.5; color: #bbb; }
+    code { background: #333; padding: 0.1em 0.35em; border-radius: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .card { background: #9bbc0f; border-radius: 8px; padding: 0.75rem; text-align: center; color: #0f380f; }
+    .card img { width: 120px; height: 120px; object-fit: contain; image-rendering: pixelated; background: #8bac0f; border-radius: 4px; }
+    .id { font-weight: 700; font-size: 0.9rem; margin-top: 0.5rem; }
+    .label { font-size: 0.85rem; margin-top: 0.25rem; }
+    .file { font-size: 0.7rem; opacity: 0.75; word-break: break-all; }
+    .aliases { font-size: 0.75rem; margin-top: 0.35rem; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Companion faces — label each sprite</h1>
+  <p>
+    Each face is a separate PNG under <code>companion/static/assets/faces/</code>.
+    Edit <code>face-sprites.json</code>: set <code>label</code> to what the face actually shows
+    (e.g. <code>mouth closed</code>, <code>mouth open</code>, <code>wink</code>) and add
+    <code>aliases</code> for triggers. Update <code>builtin</code> and lip-sync IDs in
+    <code>app.js</code> (<code>SPEAK_FACE</code>) once labels are correct.
+  </p>
+  <div id="grid" class="grid"></div>
+  <script>
+    async function main() {
+      const meta = await (await fetch("/assets/face-sprites.json")).json();
+      const grid = document.getElementById("grid");
+      const faces = Object.entries(meta.faces).sort(([a], [b]) => a.localeCompare(b));
+      for (const [id, spec] of faces) {
+        const card = document.createElement("div");
+        card.className = "card";
+        const img = document.createElement("img");
+        img.src = `/assets/${spec.file || `faces/${id}.png`}`;
+        img.alt = id;
+        const idEl = document.createElement("div");
+        idEl.className = "id";
+        idEl.textContent = id;
+        const labelEl = document.createElement("div");
+        labelEl.className = "label";
+        labelEl.textContent = spec.label || "(no label)";
+        const fileEl = document.createElement("div");
+        fileEl.className = "file";
+        fileEl.textContent = spec.file || `faces/${id}.png`;
+        card.append(img, idEl, labelEl, fileEl);
+        if (spec.aliases?.length) {
+          const aliasEl = document.createElement("div");
+          aliasEl.className = "aliases";
+          aliasEl.textContent = `aliases: ${spec.aliases.join(", ")}`;
+          card.appendChild(aliasEl);
+        }
+        grid.appendChild(card);
+      }
+    }
+    main().catch((err) => {
+      document.body.innerHTML = `<p>Failed to load faces: ${err}</p>`;
+    });
+  </script>
+</body>
+</html>

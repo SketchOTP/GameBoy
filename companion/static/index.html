@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Game Boy Companion</title>
+  <link rel="stylesheet" href="/style.css?v=3">
+</head>
+<body>
+  <main class="stage">
+    <div class="gb-unit" aria-label="Game Boy companion">
+      <div class="gb-shell" id="gb-shell">
+        <canvas id="face" width="160" height="144" aria-label="Companion face"></canvas>
+        <div id="screen-prompt" class="screen-prompt hidden" aria-hidden="true">
+          <input id="prompt" type="text" inputmode="text" enterkeyhint="send"
+                 autocomplete="off" autocorrect="off" spellcheck="false"
+                 placeholder="Type here..." aria-label="Prompt">
+        </div>
+        <div id="battery-led" class="battery-led" data-btn="battery_led"
+             aria-label="Battery indicator" title="System status"></div>
+        <img class="gb-shell-img" src="/assets/retroboy-shell.png" width="864" height="1080" alt="Game Boy">
+        <div class="gb-hit-layer">
+          <button type="button" id="btn-power-off" class="hit extra power-switch" data-btn="power_off" aria-label="Power OFF"></button>
+          <button type="button" id="btn-power-on" class="hit extra power-switch" data-btn="power_on" aria-label="Power ON"></button>
+          <button type="button" class="hit dpad up" data-btn="dpad_up" data-dpad="up" aria-label="D-pad up"></button>
+          <button type="button" class="hit dpad down" data-btn="dpad_down" data-dpad="down" aria-label="D-pad down"></button>
+          <button type="button" class="hit dpad left" data-btn="dpad_left" data-dpad="left" aria-label="D-pad left"></button>
+          <button type="button" class="hit dpad right" data-btn="dpad_right" data-dpad="right" aria-label="D-pad right"></button>
+          <button type="button" id="btn-select" class="hit pill" data-btn="select" aria-label="Select"></button>
+          <button type="button" id="btn-start" class="hit pill" data-btn="start" aria-label="Start"></button>
+          <button type="button" id="btn-b" class="hit ab" data-btn="b" aria-label="B"></button>
+          <button type="button" id="btn-a" class="hit ab" data-btn="a" aria-label="A"></button>
+          <button type="button" id="btn-phones" class="hit extra" data-btn="phones" aria-label="Phones jack"></button>
+          <button type="button" id="btn-speaker" class="hit extra" data-btn="speaker" aria-label="Speaker"></button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="overlay-calibrate-bar" class="overlay-calibrate-bar hidden" aria-live="polite">
+    <span>Calibrate: drag to move · corner handle to resize</span>
+    <button type="button" id="ovl-save">Save</button>
+    <button type="button" id="ovl-export">Export JSON</button>
+    <button type="button" id="ovl-reset">Reset defaults</button>
+  </div>
+  <div id="vkeyboard" class="vkeyboard hidden" aria-hidden="true"></div>
+  <script src="/app.js?v=3"></script>
+  <script src="/overlay-calibrate.js"></script>
+</body>
+</html>

@@ -1,5 +1,51 @@
-# Local/runtime metadata (not agent-facing)
+# --- Local runtime (not shipped) ---
 .project_intel/
-
-# Stale append-lock files
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+companion/models/*.onnx
 *.flock
+
+# --- AI / IDE agent tooling (local dev only) ---
+.cursor/
+.cursorrules
+.architect/
+.aion/
+.serena/
+.claude/
+
+# Agent rules & contracts
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+COMMANDMENTS_OF_THE_CODE.md
+
+# Agent project metadata & navigation
+project_memory/
+project_goals.md
+project_status.md
+project_history.md
+project_knowledge.md
+repo_map.md
+setup_repo.md
+
+# Agent maintenance scripts
+scripts/sync-agent-rules.sh
+scripts/audit-agent-rules.sh
+
+# Agent / MCP documentation
+docs/architect-mcp.md
+docs/mimir-tools.md
+docs/serena-tools.md
+docs/cocoindex-code.md
+docs/mcp-tool-manifest.json
+docs/project-continuity.md
+docs/rule-changelog.md
+docs/verification-harness.md
+docs/usage/
+
+# Local art references (not part of companion bundle)
+/download (4)-Photoroom.png
+/retroboy*.png
+/retrogameboyref*.png
