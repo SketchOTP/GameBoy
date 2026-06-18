@@ -372,4 +372,8 @@ Covers lip-sync markers, TTS sanitization/preparation, and chat session helpers.
 
 ## License
 
-No project-wide license file is included yet. Third-party assets may carry their own terms—check `CREDITS.txt` before redistributing artwork.
+Copyright (c) 2026 [SketchOTP](https://github.com/SketchOTP). Released under the [MIT License](LICENSE).
+
+You may use, modify, and distribute this project freely, including in commercial products. If you **sell** or commercially offer a product that includes this software, you must **credit SketchOTP and link to this repository** where end users can see it (documentation, credits screen, packaging, etc.). See the [License](LICENSE) for full terms.
+
+**Third-party assets** (shell art by @edbooth_art, face sprites, Nintendo trademarks) are not covered by our license—see [`companion/static/assets/CREDITS.txt`](companion/static/assets/CREDITS.txt) before redistributing artwork.
