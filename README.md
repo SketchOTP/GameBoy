@@ -8,6 +8,23 @@ Everything runs on your machine. No cloud account required for the UI; point it 
 
 > **Roadmap:** This repository will eventually include a DMG Game Boy emulator. The shipped application today is the **companion** under `companion/`.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/main.png" alt="Game Boy companion idle — retro shell with animated face on the LCD and green battery LED" width="420">
+</p>
+<p align="center"><em>Idle companion on the retroboy shell — health LED, auto face, and calibrated overlays.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/typing.png" alt="Companion with on-screen keyboard open and typing face on the LCD" width="420">
+</p>
+<p align="center"><em>Start opens the prompt and virtual keyboard; faces react while you type or speak.</em></p>
+
+<p align="center">
+  <img src="docs/screenshots/face-gallery.png" alt="Face gallery grid showing all 32 companion expression sprites" width="720">
+</p>
+<p align="center"><em>Built-in face gallery (<code>/face-gallery.html</code>) for labeling and previewing all 32 sprites.</em></p>
+
 ---
 
 ## Features
